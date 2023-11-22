@@ -9,8 +9,9 @@ const HomePage = () => (
   <HomeLayout>
     <h1>Let&apos;s Prompt Me</h1>
     <p style={{ maxWidth: 500, marginTop: 10 }}>
-      Curated AI prompt templates categorized by role and outcome. Learn to
-      produce high quality results by seeing how others communicate with AI!
+      Discover a collection of curated AI prompt templates, organized by role
+      and desired outcome. Master the art of communicating with AI through
+      practical examples!
     </p>
     <Row gutter={[16, 16]} style={{ maxWidth: 700, marginTop: 30 }}>
       {allPrompts.map((prompt) => (
