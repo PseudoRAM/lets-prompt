@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
+import StyledComponentsRegistry from "@/lib/antd-registry";
 
 const exo2 = Exo_2({ subsets: ["latin"] });
 
@@ -26,7 +27,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/assets/favicon.png" />
       </head>
       <body className={exo2.className}>
-        <Providers>{children}</Providers>
+        {/*<Providers>{children}</Providers>*/}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
